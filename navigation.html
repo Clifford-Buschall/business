@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website creation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">KHEM</div>
+
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><button class="signup-btn mobile">Sign Up</button></li>
+    </ul>
+
+    <button class="signup-btn desktop">Sign Up</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>We create <span>solutions</span><br>for your business</h1>
+      <p>Our team keeps a keen eye on emerging trends and technologies to ensure your marketing campaigns remain cutting-edge.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Get Started</a>
+        <a href="#" class="btn btn-outline">Explore more</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="/img/girl.png" alt="Business Illustration">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p class="about-intro">We help businesses grow with powerful tools and strategies designed for success.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Our Mission</h3>
+        <p>To empower businesses with innovative solutions that drive real results.</p>
+      </div>
+
+      <div class="about-card">
+        <i class="fas fa-users"></i>
+        <h3>Our Team</h3>
+        <p>A dedicated team of experts passionate about helping you succeed.</p>
+      </div>
+
+      <div class="about-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Our Vision</h3>
+        <p>To be the leading partner in business growth and digital transformation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+<!-- Contact Section -->
+  <div class="contact-section">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <h3>Have a Project Idea? <br><span>Let’s Talk!</span></h3>
+
+      <div class="form-group">
+        <input type="text" placeholder="First Name*">
+        <input type="text" placeholder="Last Name*">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email*">
+        <input type="text" placeholder="Phone Number*">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message"></textarea>
+      </div>
+      <button class="btn">Send Message</button>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h4>Address</h4>
+      <p>234 Street, Accra, Ghana <br> Zip: 00233</p>
+
+      <h4>Contact</h4>
+      <p>Phone: +233 555 000 123 <br>Email: info@example.com</p>
+
+      <h4>Open Time</h4>
+      <p>Monday - Friday: 9:00am - 6:00pm <br>
+         Saturday - Sunday: 10:00am - 4:00pm</p>
+
+      <h4>Stay Connected</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
